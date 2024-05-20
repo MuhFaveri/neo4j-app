@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve arquivos está
 // Configuração do driver do Neo4j para se conectar ao banco de dados
 const driver = neo4j.driver(
   'bolt://localhost:7687', // URL de conexão com o servidor Neo4j
-  neo4j.auth.basic('neo4j', 'mw91391398'), // Credenciais de autenticação (substitua 'your_password_here' pela sua senha)
+  neo4j.auth.basic('murilo', 'mw91391398'), // Credenciais de autenticação (substitua 'your_password_here' pela sua senha)
   {
     encrypted: 'ENCRYPTION_OFF', // Desativa a criptografia (para desenvolvimento)
    
